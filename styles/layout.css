@@ -1,0 +1,112 @@
+/* layout */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* deze eigenschap zorgt ervoor dat de padding en margin mee worden gerekend bij het definiëren van de totale breedte en hoogte van een element */
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	background-color: #e5e5e5;
+}
+
+.container {
+	width: 1100px; /* vaste breedte, maar kan natuurlijk ook min/max en in percentages */
+	/* width: 80%; */
+	overflow: hidden; /* clearfix */
+	padding: 40px;
+	margin: 0 auto; /* zet de hele container in het midden */
+	background-color: #fff;
+}
+
+.column-wrapper,
+main {
+	width: 100%;
+	overflow: hidden; /* clearfix */
+}
+
+.column-wrapper {
+	display: flex;
+	padding: 0 0 20px 0;
+}
+
+.column {
+	padding: 0 40px 0 0;
+}
+
+.intro {
+	padding: 0 0 20px 0;
+}
+
+
+
+/* voorbeeld media query */
+/* @media only screen and (min-width: 800px) {
+	body {
+		background: lightblue;
+	}
+} */
+
+.footer {
+	background-color: #000;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 60px 80px;
+	font-family: 'Orbitron', sans-serif;
+	flex-wrap: wrap;
+	gap: 40px;
+  }
+  
+  .footer-column {
+	flex: 1;
+	min-width: 200px;
+  }
+  
+  .footer-column h3 {
+	font-size: 26px;
+	margin-bottom: 25px;
+	line-height: 1.2;
+	font-weight: 800;
+  }
+  
+  .footer-column ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .footer-column ul li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+  }
+  
+  .footer-column ul li img {
+	width: 20px;
+	margin-right: 10px;
+	filter: invert(1);
+  }
+  
+  .footer-column a {
+	color: white;
+	text-decoration: none;
+	font-weight: 400;
+  }
+  
+  .footer-column p {
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.6;
+  }
+  
+  .footer-nav li {
+	margin-bottom: 12px;
+  }
+  
+  .footer-nav a {
+	font-weight: 600;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+  }
+  

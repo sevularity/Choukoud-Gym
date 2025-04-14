@@ -1,0 +1,219 @@
+/* achtergrond */
+body {
+  background-color: #2a2a2a;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 60px;
+  min-height: 80vh;
+  gap: 50px;
+}
+
+.hero {
+	padding-bottom: 0; /* minder ruimte onderaan */
+  }
+  
+  .services-section {
+	margin-top: -40px; /* trek het blok omhoog */
+  }
+
+  .hero {
+	min-height: 100vh; /* neemt heel scherm in hoogte */
+	background-image: url('../images/achtergrond.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /* optioneel als je parallax effect wil */
+  }
+  
+  .hero {
+	padding-bottom: 0; /* minder ruimte onderaan */
+  }
+  
+  .services-section {
+	margin-top: -40px; /* trek het blok omhoog */
+  }
+
+  .hero {
+	min-height: 100vh; /* neemt heel scherm in hoogte */
+	background-image: url('../images/bg2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed; /* optioneel als je parallax effect wil */
+  }
+
+
+
+  
+  .hero-left {
+	flex: 1;
+	max-width: 600px;
+  }
+  
+  .hero-left h1 {
+	font-size: 2rem;
+	font-weight: 800;
+	margin-bottom: 20px;
+  }
+  
+  .hero-left p {
+	font-size: 1rem;
+	margin-bottom: 16px;
+	line-height: 1.6;
+  }
+  
+  .hero-left ul {
+	margin-bottom: 16px;
+	padding-left: 20px;
+  }
+  
+  .hero-left ul li {
+	margin-bottom: 8px;
+  }
+  
+  .hero-right {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+  }
+  
+  .form-card {
+	background-color: white;
+	color: black;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	width: 100%;
+	max-width: 400px;
+  }
+  
+  .form-card h2 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+  }
+  
+  .form-card form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+  }
+  
+  .form-card input {
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+  }
+  
+  .form-card button {
+	padding: 12px;
+	background-color: #b40000;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-weight: bold;
+	cursor: pointer;
+  }
+  
+  
+
+
+  .aanbod {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 60px 30px;
+  }
+  
+  .les-card {
+	position: relative;
+	width: 400px;
+	border: 7px solid white;
+	overflow: hidden;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  }
+  
+  .les-card img {
+	width: 100%;
+	height: 550px;
+	object-fit: cover;
+	display: block;
+  }
+
+  
+  .overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 20px;
+	font-weight: 900;
+	font-family: 'Arial Black', sans-serif;
+	text-align: center;
+	padding: 8px 12px;
+	text-shadow: 2px 2px 6px black;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	z-index: 2;
+  }
+
+ 
+  .lesaanbod {
+	background-image: url('../images/bg2.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	min-height: 500px; /* ✨ zorgt dat afbeelding goed tot z’n recht komt */
+  }
+
+
+  .hero-banner {
+	background-image: url('../images/expand.png'); /* jouw pad naar de juiste foto */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 500px;  /* Pas dit aan naar wens */
+	width: 100%;
+
+  }
+  
+
+  .aanmelden-knop {
+	border: 2px solid white;
+	background-color: #B21212;
+	color: white;
+	padding: 10px 20px;
+	font-weight: bold;
+	border-radius: 10px;
+	position: absolute;
+	top: 58px;
+	left: 20px;
+
+  
+  }
+
+  .white-line {
+	height: 6px;
+	background-color: white;
+	width: 105%;
+	margin-top: 0px;
+  }
+
+  .nav-icon {
+	height: 20px;
+	width: auto;
+	filter: brightness(0) invert(2); /* maakt de icon wit – alleen als je zwarte PNG hebt */
+	margin-left: 10px;
+  }

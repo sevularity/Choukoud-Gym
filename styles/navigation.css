@@ -1,0 +1,72 @@
+.navbar {
+  background-color: black;
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+}
+
+
+
+.nav-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 30px; /* dit zorgt voor juiste marges links/rechts */
+  width: 100%;     /* zorgt dat hij zich uitstrekt over de hele breedte */
+  box-sizing: border-box; /* voorkomt dat padding de breedte opdrijft */
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-left {
+  margin-left: 0px;
+}
+
+
+
+.nav-left a,
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+}
+
+
+.nav-left a:hover::after,
+.nav-right a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+/* LOGO fix */
+.logo-container {
+  position: absolute;
+  top: 10;
+  left: 50%;
+  transform: translate(-50%, 20%); /* 35% zorgt dat het binnen beeld blijft */
+  z-index: 10;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+}
+
+
